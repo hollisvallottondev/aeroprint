@@ -5,12 +5,18 @@ html, body {
     height: 100vh;  
 }
 
-.App {
+html {
+    scroll-behavior: smooth;
+}
+
+.Section {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 
@@ -62,6 +68,8 @@ html, body {
     position: absolute;
     overflow: hidden;
     transition: all 500ms ease-in-out 250ms;
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 .ImagePreview.Show {
@@ -90,6 +98,7 @@ html, body {
     border: solid 40px transparent;
     transition: all 250ms ease-in-out 0s;
     position: relative; 
+    
 }
 
 .DropArea.Over {
@@ -108,8 +117,7 @@ html, body {
     font-size: 60px;
     font-weight: bold;
     text-align: center;  
-    line-height: calc(80vh - 80px);
-    position: absolute;
+    /* line-height: calc(80vh - 80px); */
     top: 0;
     bottom: 0;
     left: 0;
@@ -150,3 +158,29 @@ html, body {
     top: 0;
     right: 0;
 }
+
+.UploadControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.Browse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* .NewContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
+    border-style: solid;
+    border-color: green;
+} */

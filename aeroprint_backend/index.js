@@ -23,12 +23,12 @@ app.post('/upload', (req, res) => {
         console.log('files', files);
         // path
         const { path } = files.file[0];
-   
+        console.log('path', path);
         // get the temp file name from the tmp folder
-        // let filename = path.split('/');
+        let filename = path.split('/');
         // for windows: 
 
-        let filename = path.split(`\\`);
+        // let filename = path.split(`\\`);
 
         console.log('filename', filename); 
         
